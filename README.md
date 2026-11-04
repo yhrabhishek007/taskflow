@@ -1,25 +1,34 @@
-🚀 TaskForge – Task Management System
-📌 Project Overview
+# 🚀 TaskForge – Task Management System
+
+## 📌 Project Overview
+
 TaskForge is a Java-based web application for managing team tasks. It is inspired by task-tracking tools such as JIRA and helps users create, assign, view, and organize tasks in one place.
+
 The project demonstrates web application development using:
-Java
-Servlets
-JSP
-JDBC
-MySQL
-HTML and CSS
-DAO Design Pattern
-MVC Architecture
-The application follows a layered structure: the Servlet handles incoming requests, model classes represent task data, and the DAO layer performs database operations.
+
+- Java
+- Java Servlets
+- JSP
+- JDBC
+- MySQL
+- HTML and CSS
+- DAO Design Pattern
+- MVC Architecture
+
+The application follows a layered structure. The Servlet handles incoming requests, model classes represent task data, and the DAO layer performs database operations.
+
 ---
-🎯 Project Objectives
+
+## 🎯 Project Objectives
+
 The application supports task-management workflows such as:
-Creating tasks
-Assigning tasks to team members
-Adding task descriptions
-Defining story points
-Saving task information in MySQL
-Viewing tasks from a centralized page
+
+- Creating tasks
+- Assigning tasks to team members
+- Adding task descriptions
+- Defining story points
+- Saving task information in MySQL
+- Viewing tasks from a centralized page
 > Features listed as future enhancements below are not necessarily implemented in the current version.
 ---
 🏗️ Architecture
