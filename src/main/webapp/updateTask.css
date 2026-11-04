@@ -1,0 +1,340 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Segoe UI", Arial, sans-serif;
+	background: #f4f4f1;
+	color: #111;
+}
+
+/* ================= TOPBAR ================= */
+.topbar {
+	height: 76px;
+	background: #111;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 55px;
+}
+
+.brand {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	color: white;
+	text-decoration: none;
+}
+
+.brand-icon {
+	width: 40px;
+	height: 40px;
+	background: white;
+	color: #111;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 22px;
+	font-weight: 700;
+}
+
+.brand-name {
+	font-size: 21px;
+	font-weight: 700;
+}
+
+.brand-name span {
+	color: #888;
+}
+
+.brand-caption {
+	color: #777;
+	font-size: 7px;
+	letter-spacing: 2px;
+}
+
+.back-link {
+	color: #aaa;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+.back-link:hover {
+	color: white;
+}
+
+/* ================= MAIN ================= */
+.page-container {
+	max-width: 1100px;
+	margin: auto;
+	padding: 55px 30px;
+}
+
+.eyebrow {
+	color: #999;
+	font-size: 9px;
+	letter-spacing: 3px;
+	font-weight: 700;
+	margin-bottom: 13px;
+}
+
+.page-container h1 {
+	font-size: 44px;
+	letter-spacing: -2px;
+}
+
+.intro {
+	margin-top: 12px;
+	color: #777;
+	font-size: 14px;
+	line-height: 1.6;
+	margin-bottom: 35px;
+}
+
+/* ================= LAYOUT ================= */
+.edit-layout {
+	display: grid;
+	grid-template-columns: 1.45fr .75fr;
+	gap: 24px;
+}
+
+/* ================= FORM ================= */
+.form-card {
+	background: white;
+	border: 1px solid #e1e1de;
+	border-radius: 18px;
+	padding: 35px;
+	box-shadow: 0 20px 60px rgba(0, 0, 0, .04);
+}
+
+.field {
+	margin-bottom: 23px;
+}
+
+.field label {
+	display: block;
+	font-size: 13px;
+	font-weight: 700;
+	margin-bottom: 9px;
+}
+
+.field input, .field textarea, .field select {
+	width: 100%;
+	border: 1px solid #ddd;
+	background: #fafafa;
+	border-radius: 10px;
+	font-family: inherit;
+	outline: none;
+	font-size: 13px;
+}
+
+.field input, .field select {
+	height: 51px;
+	padding: 0 14px;
+}
+
+.field textarea {
+	height: 130px;
+	padding: 14px;
+	resize: vertical;
+}
+
+.field input:focus, .field textarea:focus, .field select:focus {
+	background: white;
+	border-color: #111;
+	box-shadow: 0 0 0 4px rgba(0, 0, 0, .04);
+}
+
+.field-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 17px;
+}
+
+/* Actions */
+.form-actions {
+	border-top: 1px solid #eee;
+	padding-top: 23px;
+	margin-top: 25px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 12px;
+}
+
+.form-actions a {
+	color: #777;
+	text-decoration: none;
+	font-size: 13px;
+	padding: 12px 18px;
+}
+
+.form-actions button {
+	border: none;
+	background: #111;
+	color: white;
+	height: 47px;
+	padding: 0 22px;
+	border-radius: 9px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.form-actions button:hover {
+	background: #292929;
+}
+
+/* ================= RADAR ================= */
+.radar {
+	background: #111;
+	color: white;
+	border-radius: 18px;
+	padding: 28px;
+	height: fit-content;
+	position: sticky;
+	top: 25px;
+}
+
+.radar-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.radar-header>span {
+	color: #777;
+	font-size: 8px;
+	letter-spacing: 2px;
+}
+
+.radar-circle {
+	width: 35px;
+	height: 35px;
+	border: 1px solid #444;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.radar h2 {
+	font-size: 22px;
+	margin-top: 22px;
+}
+
+.radar>p {
+	color: #777;
+	font-size: 11px;
+	line-height: 1.6;
+	margin-top: 7px;
+}
+
+/* Snapshot */
+.snapshot {
+	margin-top: 27px;
+	background: #1b1b1b;
+	border: 1px solid #303030;
+	border-radius: 12px;
+	padding: 18px;
+}
+
+.snapshot>span {
+	color: #666;
+	font-size: 8px;
+	letter-spacing: 2px;
+}
+
+.snapshot-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #303030;
+	padding: 14px 0;
+}
+
+.snapshot-row:last-child {
+	border-bottom: none;
+}
+
+.snapshot-row strong {
+	color: #aaa;
+	font-size: 11px;
+}
+
+.snapshot-row em {
+	color: white;
+	font-size: 10px;
+	font-style: normal;
+}
+
+/* ID */
+.task-id-box {
+	margin-top: 17px;
+	padding: 18px;
+	border: 1px solid #292929;
+	border-radius: 12px;
+}
+
+.task-id-box span {
+	display: block;
+	color: #666;
+	font-size: 8px;
+	letter-spacing: 2px;
+}
+
+.task-id-box strong {
+	display: block;
+	margin-top: 8px;
+	font-size: 25px;
+}
+
+/* Tip */
+.edit-tip {
+	display: flex;
+	gap: 10px;
+	margin-top: 20px;
+}
+
+.edit-tip span {
+	color: white;
+}
+
+.edit-tip p {
+	color: #666;
+	font-size: 10px;
+	line-height: 1.6;
+}
+
+/* ================= RESPONSIVE ================= */
+@media ( max-width : 850px) {
+	.edit-layout {
+		grid-template-columns: 1fr;
+	}
+	.radar {
+		position: static;
+	}
+}
+
+@media ( max-width : 600px) {
+	.topbar {
+		padding: 0 20px;
+	}
+	.back-link {
+		display: none;
+	}
+	.page-container {
+		padding: 35px 15px;
+	}
+	.page-container h1 {
+		font-size: 34px;
+	}
+	.form-card {
+		padding: 22px;
+	}
+	.field-grid {
+		grid-template-columns: 1fr;
+	}
+}

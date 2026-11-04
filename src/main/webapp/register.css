@@ -1,0 +1,435 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Segoe UI", Arial, sans-serif;
+	background: #f6f6f4;
+	color: #171717;
+}
+
+.register-page {
+	min-height: 100vh;
+	display: grid;
+	grid-template-columns: 56% 44%;
+}
+
+/* ================= LEFT ================= */
+.register-hero {
+	position: relative;
+	overflow: hidden;
+	padding: 55px 70px;
+	background: #f2f2ef;
+	min-height: 100vh;
+}
+
+.hero-circle {
+	position: absolute;
+	width: 450px;
+	height: 450px;
+	border-radius: 50%;
+	background: #dfdfdc;
+	right: -230px;
+	top: -250px;
+}
+
+/* Brand */
+.brand {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	position: relative;
+	z-index: 2;
+}
+
+.brand-icon {
+	width: 58px;
+	height: 58px;
+	border-radius: 15px;
+	background: #111;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 32px;
+	font-weight: bold;
+}
+
+.brand-name {
+	font-size: 34px;
+	font-weight: 700;
+}
+
+.brand-name span {
+	color: #777;
+}
+
+.brand-tagline {
+	font-size: 10px;
+	letter-spacing: 3px;
+	color: #888;
+	margin-top: 3px;
+}
+
+/* Hero */
+.hero-content {
+	position: relative;
+	z-index: 2;
+	margin-top: 100px;
+	max-width: 540px;
+}
+
+.eyebrow {
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	color: #777;
+}
+
+.hero-content h1 {
+	margin-top: 22px;
+	font-size: 57px;
+	line-height: 1.04;
+	letter-spacing: -3px;
+}
+
+.hero-content h1 span {
+	color: #777;
+}
+
+.hero-content>p {
+	margin-top: 25px;
+	max-width: 480px;
+	color: #686868;
+	font-size: 17px;
+	line-height: 1.7;
+}
+
+/* Features */
+.features {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 23px;
+}
+
+.feature {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.feature-icon {
+	width: 47px;
+	height: 47px;
+	border: 1px solid #d4d4d1;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: white;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.feature h3 {
+	font-size: 16px;
+}
+
+.feature p {
+	color: #777;
+	margin-top: 4px;
+	font-size: 13px;
+}
+
+/* Quote */
+.quote {
+	margin-top: 42px;
+	color: #666;
+	font-style: italic;
+}
+
+.quote div {
+	width: 70px;
+	height: 2px;
+	background: #111;
+	margin-bottom: 15px;
+}
+
+.quote p {
+	font-size: 15px;
+	line-height: 1.7;
+}
+
+/* Desk */
+.desk {
+	position: absolute;
+	right: -20px;
+	bottom: 0;
+	width: 430px;
+	height: 130px;
+	background: #222;
+	border-radius: 8px 0 0 0;
+	box-shadow: 0 -20px 50px rgba(0, 0, 0, .12);
+}
+
+.notebook {
+	position: absolute;
+	width: 170px;
+	height: 90px;
+	background: #111;
+	top: -65px;
+	left: 70px;
+	transform: rotate(-8deg);
+	border-radius: 5px;
+}
+
+.coffee {
+	position: absolute;
+	width: 60px;
+	height: 65px;
+	background: #111;
+	top: -72px;
+	right: 100px;
+	border-radius: 5px 5px 18px 18px;
+}
+
+.plant {
+	position: absolute;
+	width: 70px;
+	height: 100px;
+	right: 10px;
+	top: -105px;
+}
+
+.plant span {
+	position: absolute;
+	width: 30px;
+	height: 55px;
+	background: #333;
+	border-radius: 50%;
+}
+
+.plant span:nth-child(1) {
+	left: 5px;
+	transform: rotate(-35deg);
+}
+
+.plant span:nth-child(2) {
+	left: 25px;
+	transform: rotate(20deg);
+}
+
+.plant span:nth-child(3) {
+	left: 40px;
+	transform: rotate(50deg);
+}
+
+.plant span:nth-child(4) {
+	left: 20px;
+	top: -10px;
+}
+
+/* ================= RIGHT ================= */
+.register-section {
+	min-height: 100vh;
+	background: #fafafa;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	padding: 80px 45px;
+}
+
+/* Top login */
+.top-login {
+	position: absolute;
+	top: 32px;
+	right: 45px;
+	font-size: 14px;
+	color: #777;
+}
+
+.top-login a {
+	color: #111;
+	font-weight: 600;
+	text-decoration: none;
+	margin-left: 7px;
+}
+
+/* Card */
+.register-card {
+	width: 100%;
+	max-width: 600px;
+	background: white;
+	border: 1px solid #e5e5e5;
+	border-radius: 23px;
+	padding: 40px 43px;
+	box-shadow: 0 25px 70px rgba(0, 0, 0, .07);
+}
+
+/* Brand */
+.register-brand {
+	display: flex;
+	align-items: center;
+	gap: 13px;
+	font-size: 28px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+
+.register-brand span {
+	color: #777;
+}
+
+.register-brand-icon {
+	width: 48px;
+	height: 48px;
+	background: #111;
+	color: white;
+	border-radius: 13px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 27px;
+}
+
+/* Heading */
+.register-card h2 {
+	font-size: 31px;
+	letter-spacing: -1px;
+}
+
+.subtitle {
+	color: #777;
+	margin-top: 8px;
+	margin-bottom: 28px;
+}
+
+/* Error */
+.error-message {
+	background: #f7eeee;
+	color: #8a3030;
+	border: 1px solid #ead0d0;
+	border-radius: 9px;
+	padding: 11px;
+	font-size: 13px;
+	margin-bottom: 18px;
+}
+
+/* Form */
+.form-group {
+	margin-bottom: 19px;
+}
+
+.form-group label {
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 8px;
+}
+
+.form-group input, .form-group select {
+	width: 100%;
+	height: 53px;
+	border: 1px solid #ddd;
+	border-radius: 11px;
+	padding: 0 15px;
+	outline: none;
+	background: white;
+	font-size: 14px;
+}
+
+.form-group input:focus, .form-group select:focus {
+	border-color: #111;
+	box-shadow: 0 0 0 3px rgba(0, 0, 0, .05);
+}
+
+/* Password */
+.password-wrapper {
+	position: relative;
+}
+
+.password-wrapper input {
+	padding-right: 50px;
+}
+
+.password-button {
+	position: absolute;
+	right: 14px;
+	top: 50%;
+	transform: translateY(-50%);
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	color: #777;
+}
+
+/* Button */
+.create-button {
+	width: 100%;
+	height: 54px;
+	border: none;
+	border-radius: 11px;
+	background: #111;
+	color: white;
+	font-size: 15px;
+	font-weight: 600;
+	cursor: pointer;
+	margin-top: 5px;
+	transition: .2s;
+}
+
+.create-button span {
+	margin-left: 10px;
+	font-size: 18px;
+}
+
+.create-button:hover {
+	background: #292929;
+	transform: translateY(-1px);
+}
+
+/* Sign in */
+.signin-text {
+	text-align: center;
+	margin-top: 24px;
+	color: #777;
+	font-size: 14px;
+}
+
+.signin-text a {
+	color: #111;
+	font-weight: 700;
+	text-decoration: none;
+	margin-left: 4px;
+}
+
+/* Footer */
+.footer {
+	position: absolute;
+	bottom: 22px;
+	color: #aaa;
+	font-size: 11px;
+}
+
+/* Responsive */
+@media ( max-width : 1000px) {
+	.register-page {
+		grid-template-columns: 1fr;
+	}
+	.register-hero {
+		display: none;
+	}
+}
+
+@media ( max-width : 600px) {
+	.register-section {
+		padding: 70px 15px;
+	}
+	.register-card {
+		padding: 30px 22px;
+	}
+}
